@@ -5,9 +5,12 @@ int number = Convert.ToInt32(Console.ReadLine());
 
 int first = number / 10;
 int last = number % 10;
-if (first > last) {
-    Console.WriteLine(first);
+if (first == last) {
+    Console.WriteLine("Цифры равны: " + first);
+}
+else if (first > last) {
+    Console.WriteLine("Наибольшая цифра равна: " + first);
 }
 else {
-    Console.WriteLine(last);
+    Console.WriteLine("Наибольшая цифра равна: " + last);
 }
