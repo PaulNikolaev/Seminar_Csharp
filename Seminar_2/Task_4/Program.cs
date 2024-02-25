@@ -10,7 +10,8 @@ while (variable != 0){
     variable = variable / 10;
     i *= 10;
 }
-//Console.WriteLine(n);
+//Console.WriteLine(i);
+
 
 while (i > 1) {
     i = i / 10;
