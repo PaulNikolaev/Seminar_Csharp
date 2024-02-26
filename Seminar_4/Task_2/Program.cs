@@ -1,4 +1,8 @@
-﻿Console.Clear();
+﻿//Задайте одномерный массив, заполненный случайными
+//числами. Определите количество простых чисел в этом
+//массиве.
+
+Console.Clear();
 int[] CreateRandomArray(int min, int max, int size)  // Функция создания массива
 {
     int[] array = new int[size];
