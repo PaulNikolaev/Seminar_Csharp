@@ -23,7 +23,7 @@ void ShowArray(int[] array)  // Функция вывода массива
     }
 }
 
-int NumberSearch(int[] array)
+int NumberSearch(int[] array) // Количество чисел, которые оканчиваются на 1 и делятся нацело на 7.
 {
     int sum = 0;
     foreach (int item in array)
@@ -47,6 +47,3 @@ ShowArray(array);
 int sum = NumberSearch(array);
 Console.WriteLine("");
 Console.WriteLine("Количество чисел соответствующие условиям: " + sum);
-
-
-
