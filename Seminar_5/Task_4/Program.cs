@@ -3,7 +3,7 @@
 // арифметических значений по строкам двумерного массива.
 
 
-int[,] Create2dArray(int min, int max, int rows, int cols)
+int[,] Create2dArray(int min, int max, int rows, int cols) // Создание двумерного массива
 {
   int[,] array = new int[rows, cols];
   for (int i = 0; i < rows; i++)
@@ -16,7 +16,7 @@ int[,] Create2dArray(int min, int max, int rows, int cols)
   return array;
 }
 
-void Show2dArray(int[,] array)
+void Show2dArray(int[,] array) // Печать двумерного массива
 {
   for (int i = 0; i < array.GetLength(0); i++)
   {
@@ -28,7 +28,7 @@ void Show2dArray(int[,] array)
   }
 }
 
-void ShowArray(int[] array)
+void ShowArray(int[] array) // Печать одномерного массива
 {
   for (int i = 0; i < array.Length; i++)
   {
@@ -36,7 +36,7 @@ void ShowArray(int[] array)
   }
 }
 
-int[] GetMiddleAriphmetics(int[,] array)
+int[] GetMiddleAriphmetics(int[,] array) // Поиск средне арифметического в строке массива
 {
   int[] newArr = new int[array.GetLength(0)];
 
