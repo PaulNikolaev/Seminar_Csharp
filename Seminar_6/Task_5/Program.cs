@@ -3,7 +3,7 @@
 
 Console.Clear();
 
-bool PalindromeCheck(char [] array) 
+bool PalindromeCheck(string array) 
 {
     bool result = true;
     int i = 0;
@@ -21,14 +21,7 @@ bool PalindromeCheck(char [] array)
 Console.WriteLine("Задайте произвольную строку, чтобы проверить \n является ли она палиндромом:");
 string str = Console.ReadLine();
 
-char [] array = new char[str.Length];
-for (int i = 0; i < str.Length; i++)
-{
-    array[i] = str[i];
-}
-
-
-if (PalindromeCheck(array))
+if (PalindromeCheck(str))
 {
     Console.WriteLine("Да");
 }
