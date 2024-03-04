@@ -5,7 +5,6 @@
 Console.Clear();
 
 string str1 = "Hello";
-string str2 = "";
 char [] array = new char[str1.Length];
 for (int i = 0; i < str1.Length; i++)
 {
