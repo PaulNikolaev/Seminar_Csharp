@@ -16,16 +16,13 @@ void Show2dArray(int[,] array) // Печать двумерного массив
 
 int[,] SwapFirstLastRows(int[,] array)
 {  
-    int temp = 0;
-    for (int i = 0; i < array.GetLength(0); i++)
+
+  for (int j = 0; j < array.GetLength(1); j++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            temp = array[0, j];
-            array[0, j] = array[array.GetLength(0) - 1, j];
-            array[array.GetLength(0) - 1, j] = temp;
-        }
-    } 
+      int temp = array[0, j];
+      array[0, j] = array[array.GetLength(0) - 1, j];
+      array[array.GetLength(0) - 1, j] = temp;
+    }
     return array;
 }
 
