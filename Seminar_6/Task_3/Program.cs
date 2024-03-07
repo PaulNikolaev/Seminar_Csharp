@@ -27,13 +27,13 @@ char [,] array = new char[,]
 
 
 string str = "";
-  for (int i = 0; i < array.GetLength(0); i++)
+for (int i = 0; i < array.GetLength(0); i++)
+{
+  for (int j = 0; j < array.GetLength(1); j++)
   {
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-        str += array[i, j];
-    }
+    str += array[i, j];
   }
+}
 
 Show2dArray(array);
 Console.WriteLine(str);
